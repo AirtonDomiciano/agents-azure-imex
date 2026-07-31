@@ -1,0 +1,19 @@
+{
+  "name": "agents-azure-imex",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monitor pessoal de cards do Azure DevOps para o fluxo IMEX.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "monitor": "npm run build --silent && node dist/main.js",
+    "check": "tsc --noEmit -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  }
+}
